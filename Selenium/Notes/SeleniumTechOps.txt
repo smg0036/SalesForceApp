@@ -1,0 +1,56 @@
+550 jersey ave,new brunswick nj 08901
+suite 200
+877-803-6315
+demoqa.com/buttons
+
+Dropdown:
+Select:
+webElement sel = driver.findElement(By.xpath(" "));
+Select select = new Select(sel);
+select.SelectByValue("").click();//SelectByIndex() //SelectByVisibleText() also available
+
+RadioButton:
+
+List<WebElement> rb=webElement.findElements(By.name=" ");
+
+if(rb.get(1).isSelected()){
+  System.out.println("Already selected.Select another ption");
+}else{
+rb.get(1).click();
+}
+
+
+mouse hover:
+webElement mh = driver.findElement(By.xpath(" "));
+Actions action= new Actions(driver);
+action.moveToElement(mh).build().perform();
+
+right click:
+WebElement rc = driver.findElement(By.xpath(""));
+Actions action = new Actions(driver);
+action.contextClick(rc).sendKeys(ARROW_DOWN).sendKeys(ARROW_DOWN).build.perform();
+
+Drag and drop:
+WebElement from = driver.findElement(By.xpath(""));
+WebElement to = driver.findElement(By.xpath(""));
+
+Actions action=new Actions(driver);
+action.clickAndHold(from).moveToElement(to).release(to).build().perform();
+
+Keyboard:
+WebElement username = driver.findElement(By.id("username");
+Keyboard keyboard = ((HasInputDevices)driver.getKeyboard());
+keyboard.pressKey("a");
+keyboard.pressKey(Keys.NUMPAD1);
+keyboard.pressKey(Keys.CONTROL,"t");
+keyboard.pressKey(F5);
+keyboard.pressKey(Keys.CHORD("x","y","z");
+
+Link:
+By.linkText(" ").click();
+String currentUrl = driver.getCurrentUrl();
+syso(currentUrl);
+
+GenerateReport.getInstance();//its a singleton class
+to use the methods in generate reports in other classes.
+

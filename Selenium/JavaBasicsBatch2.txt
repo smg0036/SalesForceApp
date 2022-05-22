@@ -1,0 +1,54 @@
+12/03/21 Assignment
+-------------
+write program for the following pattern:
+1,4,7,10,13
+
+0,4,8,12,16
+---------------------------
+Notes:
+
+
+12/06/21
+---------
+https://forms.gle/3YtpLYJRE12K6Sfw9 //fill the form today
+
+Assignment
+1:57 PM: swap 2 number without 3rd variable
+check the given word is palindrome or not
+check the given number is prime or not
+checck the given number is armstrong or not
+check the longest palindrome in a given string
+linear search
+bubble sort
+
+user input and separate methods for all the above programs
+n.yadush@tekarch.com
+divyashree ph-->
+3362657478
+
+
+12/07/21
+---------
+Assignment:
+ $1. convert an array to string in Java.
+$2. convert string to integer.
+$3. convert int to string.
+$4. check if two strings are the same ignoring their cases.
+5. given an array of numbers print unique numbers and also print number of occurance of duplicate elements.
+6. check if two strings are anagrams of each other?
+7. reverse a string in Java without using the reverse method?
+8. count the occurrence of the given character in a string?
+9. check if a string is a palindrome?
+10. program to remove given characters from the string?
+11. count the number of words in a given string sentence?
+12. reverse the words from the given string sentence?
+13. swap two strings without using the third variable
+
+read and print matrix value
+
+3456
+4568
+8954
+
+
+

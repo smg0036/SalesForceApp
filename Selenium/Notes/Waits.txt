@@ -1,0 +1,22 @@
+Dynamic Waits:
+
+ImpicitlyWait
+ExplicitWait
+FluentWait
+
+1.driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); 
+
+2.WebDriverWait wait =new WebDriverWait(driver,30);//specific to //one element
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")));
+//lot of methods available in //ExpectedConditions
+
+3.FluentWait  //specific to one element
+
+polling time
+Wait<WebDriver> wait1 = new FluentWait<WebDriver>(driver)
+.withTimeout(Duration.ofSeconds(30))
+.pollongEvery(Duration.ofSeconds(30))
+.ignoring(NoSuchElementException.class);
+---------------------------------------------------------
+(locator= By.----)
+By locator = By.findElement(By.id(" "));

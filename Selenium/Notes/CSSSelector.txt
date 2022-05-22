@@ -1,0 +1,19 @@
+tagname#id
+tagname.classname
+tagname.name
+
+input[type='text'][]
+
+starts with ^
+ends with $
+
+starts with-->input[type^='xt']
+ends with-->input[type$='xt']
+contains-->input[]type^= 'ex']
+
+div input //space instead of forward slash
+div input[id='personaladress']
+div input[id = ''] and [type='']
+
+//a -->returns all elements which are links
+

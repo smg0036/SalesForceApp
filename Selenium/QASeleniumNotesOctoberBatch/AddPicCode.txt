@@ -1,0 +1,104 @@
+
+12:42 PM: driver.switchTo().frame("contactInfoContentId");
+
+
+
+Lakshmiprasad (to All - Entire Audience):
+
+12:44 PM: //add photo
+  try {
+  Actions act = new Actions(driver);
+   Thread.sleep(2000);
+  WebElement photo = driver.findElement(By.xpath("//span[@class='moderatorBadge']"));
+   act.click(photo).build().perform();
+   test.log(Status.PASS, "Clicked on the link to upload profile pic");
+   Thread.sleep(3000);
+  driver.switchTo().frame(driver.findElement(By.id("uploadPhotoContentId")));
+  String imgFile = System.getProperty("user.dir")+"/resource/pic.png";
+  WebElement uploadImg = driver.findElement(By.xpath("//input[@class='fileInput']"));
+   Thread.sleep(3000);
+   uploadImg.sendKeys(imgFile);
+   test.log(Status.PASS, "Uploaded profile file");
+  driver.findElement(By.xpath("//input[contains(@id,'uploadBtn')]")).click();
+  driver.findElement(By.xpath("//input[@type='submit']")).click();
+  test.log(Status.PASS, "profile pic is uploaded");
+  } catch(NoSuchElementException e) {
+   System.out.println("Profile pic is already uploaded");
+   test.log(Status.PASS, "profile pic is already exisiting");
+  }test.pass("myProfileOptions_TC06 : PASSED");
+  extent.flush();
+-----------------------------------------------------------------------------
+
+
+Mithun reddy (to All - Entire Audience):
+
+11:59 AM: (/html/body)[0]
+
+
+
+Mithun reddy (to All - Entire Audience):
+
+11:59 AM: WebElement postBody= driver.findElement(By.xpath("//html[1]/body[1]"));
+  postBody.sendKeys("Hello");
+
+
+
+Mithun reddy (to All - Entire Audience):
+
+12:11 PM: List<String> windows = (List<String>) driver.getWindowHandles();
+  driver.switchTo().window(windows.get(1));
+  driver.findElement(By.className("other")).click();
+//  driver.switchTo().parentFrame();
+  driver.switchTo().window(windows.get(0));
+
+
+
+Lakshmiprasad (to All - Entire Audience):
+
+12:41 PM: driver.findElement(By.xpath("//*[@id=\"toolsContent\"]/tbody/tr/td[1]/div/div/div[1]/ul/li[2]/a")).click();
+  driver.findElement(By.xpath("//*[@id=\"ext-gen20\"]")).click();
+  driver.findElements(By.id("ext-gen265"));
+  Actions action =new Actions(driver);
+  action.sendKeys(Keys.ARROW_DOWN).build().perform();
+Actions action1=new Actions(driver);
+----------------------------------------------------------------
+11:37 AM: driver.findElement(By.xpath("//*[@id=\"Account_Tab\"]/a")).click();
+  driver.findElement(By.id("tryLexDialogX")).click();
+----------------------------------------------------------------
+
+11:43 AM: driver.switchTo().frame(0);
+  Thread.sleep(2000);
+  driver.findElement(By.xpath("/html/body")).sendKeys("Hello");
+  test.pass("Text field entered");
+  Thread.sleep(5000);
+-------------------------------------------------------------------
+ Set<String> wind = driver.getWindowHandles();
+  Iterator<String> windowH = wind.iterator();
+  String parentW = windowH.next();
+  String childW = windowH.next();
+  driver.switchTo().window(childW);
+----------------------------------------------------------------------
+
+WebElement upload_file = driver.findElement(By.xpath("//*[@id='chatterFile']"));  //file upload
+   String filePath=System.getProperty("user.dir")+"\\src\\test\\resources\\sampleText.txt";
+   upload_file.sendKeys(filePath);
+--------------------------------------------------------------------
+12:24 PM: //click on dd
+  driver.findElement(By.id("ext-gen148")).click();
+  List <WebElement> values = driver.findElements(By.xpath("//img[@id='ext-gen148']"));
+  for(int j=0;j<values.size();j++)
+  {
+   if (values.get(j).getText().contains("Created Date"))
+   {values.get(j).click();
+  break;
+   }
+}
+-----------------------------------------------------------------
+
+driver.findElement(By.xpath("//*[@id=\"toolsContent\"]/tbody/tr/td[1]/div/div/div[1]/ul/li[2]/a")).click();
+  driver.findElement(By.xpath("//*[@id=\"ext-gen20\"]")).click();
+  driver.findElements(By.id("ext-gen265"));
+
+
+
+

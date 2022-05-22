@@ -1,0 +1,4 @@
+Robot Class
+
+robot.keyPress(KeyEvent.VK_H);
+keyRelease

@@ -1,0 +1,38 @@
+method level -->@Test
+class-->contain multiple methods
+Test-->Multiple classes
+Suite-->multiple tests
+
+@BeforeMethod-->before @Test method
+@BeforeClass-->before any class execution starts
+@BeforeTest-->
+@BeforeSuite-->
+
+@Test(group= -- ,priority=1, enabled=true)
+
+priority starts from 0
+
+testng.xml
+------------
+<Suite>
+<test>
+<classes>
+<class name = "  "/>
+<class name = " "/>
+</classes>
+</test>
+</Suite>
+
+Ctrl+F11 to run testng.xml
+
+cross browser testing--> chrome, firefox, safari, edge
+
+log4j-->logging console.file
+
+extent reports
+
+
+
+
+Doubts:
+what is smoke testing?

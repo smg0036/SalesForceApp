@@ -1,0 +1,43 @@
+Absolute XPath:starts with /
+Relative XPath: starts with //
+
+XPATH = //tagname[@attribute Name='attribute value'];
+
+for multiple attributes use--> and
+//*-->for all tags with type-->text
+
+
+
+//label[text()='Female']
+
+
+//form/div[3]/div[1]/label
+
+or
+
+//form/div[3]//div/label (giving a relative path inside a relativepath)
+
+//form/div[3]/div/input
+
+//form/div[3]/div/label[text()='Postal Address']
+
+//label[contains(text(),'Postal address')]
+
+//*[contains(text(),'Postal address')]
+//*[contains(@type,'sub')]
+------------------------------
+//following::               //further
+//Preceding::               //upto
+ancestor:://parent node
+child::
+preceding::
+--------------------------------------
+dynamic web elements //if there is admin123 ,admin243, admin4
+//input[starts-with(@id,'admin')]
+
+//label[starts-with(@id,'april22')]
+//label[starts-with(text(),'P')]
+
+use or & and: for multiple attributes
+
+

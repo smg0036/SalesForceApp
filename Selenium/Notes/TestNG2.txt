@@ -1,0 +1,3 @@
+priority,enabled,dependsOnMethods={"methodName"}
+1.Assert/hardAssert-->stop the execution
+2.softAssert-->continue the execution of other lines

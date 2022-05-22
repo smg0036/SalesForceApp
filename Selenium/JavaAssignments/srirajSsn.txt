@@ -1,0 +1,13 @@
+550 jersey ave,new brunswick nj 08901
+suite 200
+877-803-6315
+
+mouse hover:
+webElement mh = driver.findElement(By.xpath(" "));
+Action action= new Action(driver);
+action.moveToElement(mh).build().perform();
+
+right click:
+WebElement rc = driver.findElement(By.xpath(""));
+Action action = ne Action(driver);
+action.contextClick(rc).sendKeys(ARROW_DOWN).sendKeys(ARROW_DOWN).build.perform();

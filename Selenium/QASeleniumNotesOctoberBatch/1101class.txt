@@ -1,0 +1,93 @@
+Add dependency
+Add the new plugin
+
+
+
+Test NG (advanced version of JUnit)
+Framework development tool
+
+provides annotations to control the test cases/methods
+doesnt require main method to run a test case
+Data providers
+create grouping of test cases
+can set priority of execution
+can do certain actions based on events/listeeners(Pass, Fail, skip
+can make assertions
+
+
+
+creating reusable functions for the framework
+
+
+priority in TestNG: lowest number to highest
+
+minus values can also be included
+- to +
+no priority means default priority of 0.
+
+if u have 2 test cases with same priority it will check alphabetic order of
+method name(A to Z)(a to z) (CAPITAL 
+
+ FIRST)
+
+e.g: method name: Launch9(), Launch7()
+Launch7 executes first
+
+dependsOnMethods="method name"//waits for that method to get pass)
+
+dependsOnMethods overrides the priority
+
+enabled = false
+
+By default all the meathods have enabled = true
+
+@AfterMethod
+public void loginApp()
+
+@BeforeMethod
+PUBLIC VOID logoutApp()
+
+@Test(priority = 1, groups ={"Login", "Sanity"})
+
+@BeforeMethod(onlyForGroups = "Login")
+
+
+//It executes before start of any test cases in the class)
+@BeforeClass(description="used to launch application before running test cases")
+
+@AfterClass(alwaysRun=true)
+
+gets executed before executing any of the groups
+@BeforeGroups(dependsOnGroups=
+@BeforeSuite
+public void suitLevelPrecondition(){
+}
+
+@BeforeTest   //gets exeuted only once before test even if we have five different class
+public void demo(){
+
+Order:
+-------
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeGroups
+@BeforeMethod
+@Test
+@AfterMethod
+@AfterGroups
+@AfterClass
+@AfterTest
+@AfterSuite
+
+
+AppUtilities:launch App
+basicUtilities:
+
+
+
+
+
+
+
+

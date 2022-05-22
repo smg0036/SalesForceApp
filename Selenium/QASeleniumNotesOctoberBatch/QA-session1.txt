@@ -1,0 +1,91 @@
+Mithun
+4082167828
+mithun.r@tekarch.com
+class:10 am to 12pm
+
+
+lakshmi prasad
+4084185229
+l.prasad@tekarch.com
+workshop:11:30 to 12:30
++91 8277286167
+
+Salesforce username and password:
+--------------------------------
+muddusoumya-mwlj@force.com
+mahisri@321
+--------------------------------
+
+send e-mail to mithun and cc lakshmi prasad, bhoomika a day before if you miss a class 
+
+--------------------------------------------------------------
+java
+manual concepts, Agile
+Selenium (Extent reports, Log4J, Framework)
+Maven
+TetNG
+Git, Github
+Jenkins CI/CD
+API TESTING
+POSTMAN
+RestAPI - Rest assured
+Mobile testing->Appium, Android
+
+SQL
+UNIX
+Behavior Driven testing framework(BDD)-->Cucumber
+
+Projects--> Salesforce,RestApi, XERO -->
+POC(proof of concept)
+
+------------------------------------------------------------------------
+
+
+toUpperCase
+isEmpty()
+trim()
+concat()
+replace(x,y)
+length()
+contains(x) where x is string or a char in string
+equals()
+equalsIgnoreCase()
+char[]s5 = s4.toCharArray()
+endsWith("xyz")
+s.compareTo()//lexographic comparison
+String[] ample = s4.split(" ");
+------------------------------------------------------------
+StringBuffer
+StringBuilder
+-------------------------------------
+(homePage.userMenu);
+ basicUtil.isElementDisplayed(homePage.userMenuDropDown);
+ 
+ Assert.assertTrue((basicUtil.isElementVisible(homePage.myProfile)) && 
+     (basicUtil.isElementVisible(homePage.mySetting)) && 
+     (basicUtil.isElementVisible(homePage.developerConsole)) && 
+     (basicUtil.isElementVisible(homePage.logOut)));
+---------------------------------------------------------
+//div[(@class='mbrMenuItems') and (@id='userNav-menuItems')]/a
+  List<WebElement> ele = driver.findElements(By.xpath(path));
+-------------------------------------------------------------------
+String path = "//div[(@class='mbrMenuItems') and (@id='userNav-menuItems')]/a";
+  List<WebElement> ele = driver.findElements(By.xpath(path));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

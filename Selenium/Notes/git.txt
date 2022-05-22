@@ -1,0 +1,28 @@
+git init
+git status
+git add .
+or git add -a
+git commit-m "this is my first commit"
+
+
+
+git stage .(adds only the changes)
+
+git log (gives history of commits)
+
+git checkout (key of the commit) (to rollback)
+
+add-->add new and modified files
+stage-->add only modified files
+
+commits-->commits the code in local repo
+commit and push-->commit and push the code onto github
+
+git push origin master
+
+git branch-->to check the branches created
+
+git branche branchName-->to create new branch
+git merge (branch name)-->to merge to a head branch
+9088128678-->pam
+7322367460-->Esa

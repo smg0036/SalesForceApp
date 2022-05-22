@@ -1,0 +1,50 @@
+git --version
+git clone repositoryName
+git status
+git add filename
+git restore --staged filename
+git restore filename
+git commit -m "message" filename
+git add . (to add all files)
+
+
+git log --oneline
+git push origin main
+git checkout HEAD
+git checkout filename
+git DEL filename
+git init
+git push -u origin main
+git checkout -b "branchName"
+git push --setup-uptream origin "branchName"
+git rebase -i HEAD~(number of commits)
+git restore .
+git push -f 
+----------------------------------------------------------------
+  1. ssh-keygen -t rsa -b 4096 -C "youremail@gmail.com"
+  
+  2. eval $(ssh-agent -s)
+  
+  3. ssh-add ~/.ssh/id_rsa
+  
+  4. clip < ~/.ssh/id_rsa.pub
+  5. sNow go to settings in Github and paste it under ssh
+--------------------------------------------------------------------
+908-812-8678 pam
+------------------------------
+https://github.com/Mithun-reddy/-Oct21_SFDC_Framework
+------------------------------------------------------------------
+PM: # The root logging configuration
+log4j.rootCategory=INFO, rolling, stdout
+log4j.logger.accessLogger=DEBUG
+
+# Define console appender
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%-2p %c{1} : %L - %m%n
+log4j.appender.rolling=org.apache.log4j.RollingFileAppender
+log4j.appender.rolling.File=log1.log
+log4j.appender.rolling.MaxFileSize=5MB
+log4j.appender.rolling.MaxBackupIndex=0
+log4j.appender.rolling.layout=org.apache.log4j.PatternLayout
+log4j.appender.rolling.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c %L - %m%n

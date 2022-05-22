@@ -1,0 +1,3 @@
+To update or print all the values in an array, enhanced for loop is a good option
+
+Values cannot be entered into an array through for each as for each only returns the values that are already stored into array
